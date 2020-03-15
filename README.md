@@ -127,6 +127,15 @@ Ejercicios
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
 
+  Per demostrar bé aquest punt, presentem tres captures que creiem que són importants, les dues primeres simbolitzen els valors de S i
+  V de els diferents documents, el fet per nosaltres i el fet per detecció automàtica. Finalment, la última imatge, veu reflectit les 
+  dos anteriors en un fragment del .wav en el wavesurfer.
+  
+  <img src="cap 58.jpg" width="640" align="center">
+  
+  <img src="cap 60.jpg" width="640" align="center">
+  
+  <img src="cap 61.jpg" width="640" align="center">
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
