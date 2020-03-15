@@ -126,18 +126,20 @@ Ejercicios
 
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
+  
+  	Esta gráfica la insertamos con un audio en el qual vemos que hay mucho ruido, aun asi podemos diferenciar los tramos de voz y 		silencio.
 
 	<img src="pic1.jpeg" witdth="500" align="center">
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
-  Existeix una discrepància obvia entre el etiquetat manual i el autòmatic, ja que el primer dels dos està realitzat a ull mentre que el   segon per un algoritme aixi que obviament hi han diferències.
+		El etiquetado manual lo hemos hecho aproximado segun lo que veiamos en la gráfica de potencia. Al ver la detección 			automática que hace el programa, podemos ver que aunque se aproxima bastante no coinciden exactamente los tiempos de 			inicio y final de cada una de las secciones (VOZ, SILENCIO).
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
   
-  <img src="cap.jpg" width="640" align="center">
+  <img src="pic2.jpeg" width="500" align="center">
 
 
 ### Trabajos de ampliación
