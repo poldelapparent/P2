@@ -15,7 +15,7 @@ int main (int argc, char *argv[]) {
   SNDFILE *sndfile_in, *sndfile_out = 0;
   SF_INFO sf_info;
   FILE *vadfile;
-  int n_read = 0, i, u = 0; /*n_write = 0*/
+  int n_read = 0, i, u = 0;
 
   VAD_DATA *vad_data;
   VAD_STATE state, last_state;
@@ -26,6 +26,8 @@ int main (int argc, char *argv[]) {
   unsigned int t, last_t; /* in frames */
 
   char	*input_wav, *output_vad, *output_wav, *ka, *kb;
+
+  int t_0 = 1;
 
   int t_0 = 1;
 
@@ -94,6 +96,7 @@ int main (int argc, char *argv[]) {
     if (state != last_state && state != ST_UNDEF) {
       if (t != last_t){
         //fprintf(vadfile, "%.5f\t%.5f\t%s\n", last_t * frame_duration, t * frame_duration, state2str(last_state));
+        //Els següents if ens asseguren que només es mostrin les trames de veu i silenci
         if (state == ST_SILENCE){
           last_t -= u;
           fprintf(vadfile, "%.5f\t%.5f\t%s\n", last_t * frame_duration, (t - 1) * frame_duration, state2str(last_state));
@@ -114,13 +117,18 @@ int main (int argc, char *argv[]) {
       last_t = t;
     }
     t += frame_duration;
-    if (state != ST_UNDEF){
-      u = 0;
-    }
+
+//    if (state != ST_UNDEF){
+//      u = 0;
+//    }
 
     if (sndfile_out != 0) {
       /* TODO: go back and write zeros in silence segments */
     }
+
+//    if (state != ST_UNDEF){
+//      u++;
+//    }
 
     if (state != ST_UNDEF){
       u++;

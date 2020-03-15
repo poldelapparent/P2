@@ -99,15 +99,24 @@ Ejercicios
   continuación, una captura de `wavesurfer` en la que se vea con claridad la señal temporal, el contorno de
   potencia y la tasa de cruces por cero, junto con el etiquetado manual de los segmentos.
 
+<img src="im1.jpeg" width="640" align="center">
+
+  Aquesta imatge correspon a la primera grabació que vem realitzar al laboratori. Posteriorment vem realitzar una segona grabació (totes   dues les tenim al repositori), ja que hi havia menys soroll i ens ajudava millor a realitzar el nostre algoritme.
 
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
 
 	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para estar
       seguros de que un segmento de señal se corresponde con voz.
+      
+      El silencio se corresponde hasta los 40 dB y los señales de voz hasta los 55dB
 
 	* Duración mínima razonable de los segmentos de voz y silencio.
+	
+	Silencio: 0,42s Voz: 0,5 s
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
+	
+	Els sons consonants fricatius tenen mes talls per zero, i els oclusivs també però amb menor cuantitat.
 
 
 ### Desarrollo del detector de actividad vocal
@@ -121,9 +130,13 @@ Ejercicios
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
+  Existeix una discrepància obvia entre el etiquetat manual i el autòmatic, ja que el primer dels dos està realitzat a ull mentre que el   segon per un algoritme aixi que obviament hi han diferències.
+
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
+  
+  <img src="cap.jpg" width="640" align="center">
 
 
 ### Trabajos de ampliación
@@ -147,6 +160,8 @@ Ejercicios
 
 - Si lo desea, puede realizar también algún comentario acerca de la realización de la práctica que considere
   de interés de cara a su evaluación.
+  
+  Quan hem realitzat l'algoritme de la part obligatòria, tot i que ens surt un 90% de encert, hi han dos fitxers que ens surten un 70% 	   que ens fa baixar la mitja per algun problema en el nostre programa que no acabem de entendre.
 
 
 ### Antes de entregar la práctica

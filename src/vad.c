@@ -63,7 +63,7 @@ VAD_DATA * vad_open(float rate, char *ka, char *kb) {
   vad_data->sampling_rate = rate;
   vad_data->frame_length = rate * FRAME_TIME * 1e-3;
   vad_data->k0 = 0.0;
-  vad_data->k1 = atof(ka); 
+  vad_data->k1 = atof(ka); //atof() per passar de string a float
   vad_data->k2 = atof(kb);
   return vad_data;
 }
@@ -102,9 +102,10 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
   switch (vad_data->state) {
   case ST_INIT:
     if (i <= 10){
+      //Saltem la primera mostra (i = 0) ja que ens alguns audios eren pics baixos
+      //amb una potència molt per sota de la mitjana del silenci
       if (i != 0){
         vad_data->k0 += compute_features(x, vad_data->frame_length).p;
-        //printf("%f\n", f.p);
       }
       i++;
     }
@@ -113,8 +114,8 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
       vad_data->state = ST_SILENCE;
       vad_data->k0 = ((vad_data->k0)/10) + 1;
       vad_data->k1 += vad_data->k0; //2.4
-      vad_data->k2 += vad_data->k0; //3.4
-      printf("k0:%f\n k1:%f\n k2:%f\n", vad_data->k0, vad_data->k1, vad_data->k2);
+      vad_data->k2 += vad_data->k0; //3.374
+      //printf("k0:%f\n k1:%f\n k2:%f\n", vad_data->k0, vad_data->k1, vad_data->k2);
     }
     break;
 
@@ -152,6 +153,8 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
     break;
   }
 
+  //Retornem ST_SILENCE en comptes de ST_INIT ja que el
+  //programa nomes detecta Silenci o Veu
   if (vad_data->state == ST_INIT) return ST_SILENCE;
   if (vad_data->state == ST_SILENCE ||
       vad_data->state == ST_VOICE)

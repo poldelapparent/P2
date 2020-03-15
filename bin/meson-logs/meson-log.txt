@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 Build started at 2020-03-15T22:34:43.709566
+=======
+Build started at 2020-03-11T15:48:06.917030
+>>>>>>> 746f23edab11e48b6c426e447c5e872b873ccb7f
 Main binary: /usr/bin/python3
 Python system: Linux
 The Meson build system
 Version: 0.45.1
+<<<<<<< HEAD
 Source dir: /mnt/c/Users/laura/Documents/PAV/Laboratori/P2
 Build dir: /mnt/c/Users/laura/Documents/PAV/Laboratori/P2/bin
 Build type: native build
@@ -21,4 +26,14 @@ Native C compiler: cc (gcc 7.4.0 "cc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
 Build machine cpu family: x86_64
 Build machine cpu: x86_64
 Build targets in project: 2
+=======
+Source dir: /mnt/c/Users/Pol de Lapparent/Desktop/PAV/P2
+Build dir: /mnt/c/Users/Pol de Lapparent/Desktop/PAV/P2/bin
+Build type: native build
+Project name: Práctica 2 de PAV - detección de actividad vocal
+Native C compiler: cc (gcc 7.4.0 "cc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Build targets in project: 1
+>>>>>>> 746f23edab11e48b6c426e447c5e872b873ccb7f
 Found ninja-1.8.2 at /usr/bin/ninja
