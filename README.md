@@ -137,7 +137,7 @@ Ejercicios
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
   
-  <img src="pic3.jpeg" width="500" align="center">
+  <img src="pic2.jpeg" width="500" align="center">
 
 
 ### Trabajos de ampliación
@@ -152,7 +152,8 @@ Ejercicios
 
 - Si ha usado `docopt_c` para realizar la gestión de las opciones y argumentos del programa `vad`, inserte
   una captura de pantalla en la que se vea el mensaje de ayuda del programa.
-
+  
+  <img src="pic3.jpeg" width="500" align="center">
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
 
