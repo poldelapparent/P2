@@ -137,7 +137,7 @@ Ejercicios
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
   
-  <img src="pic2.jpeg" width="500" align="center">
+  <img src="pic3.jpeg" width="500" align="center">
 
 
 ### Trabajos de ampliación
