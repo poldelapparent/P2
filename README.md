@@ -100,15 +100,15 @@ Ejercicios
   potencia y la tasa de cruces por cero, junto con el etiquetado manual de los segmentos.
 
 	<img src="pic1.jpeg" witdth="500" align="center">
-	
-		Esta imagen se corresponde a la primera grabacion que realizamos en el laboratorio. Posteriormente hicimos una segunda 			con menos ruido de fondo y mayor claridad en el audio. 
+
+ Esta imagen corresponde a la primera grabacion que hicimos en el lab, posteriormente hicimos otra que era mejor i planteamos en el siguiente ejercicio,
 
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
 
 	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para estar
       seguros de que un segmento de señal se corresponde con voz.
       
-		En nuestra práctica hemos coniderado un aumento de aproximadamente 3 dB.
+        	En nuestra práctica hemos coniderado un aumento de aproximadamente 3 dB.
 
 	* Duración mínima razonable de los segmentos de voz y silencio.
 	
@@ -127,7 +127,9 @@ Ejercicios
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
   
-		No hemos podido obtener la el fichero .lab que mostrase la detección automática. Aún asi, hemos podido comparar los 			intervalos obtenidos al ejecutar nuestro programa con el fichero .lab que hicimos al marcar manualmente los tramos de 			voz y silencio. Las conclusiones las exponemos en el siguiente apartado.
+  	Esta gráfica demuestra el etiquetado manual, la detección automática i el senyal.
+
+	<img src="cap-61.jpeg" witdth="500" align="center">
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
