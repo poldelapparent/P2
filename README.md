@@ -108,16 +108,16 @@ Ejercicios
 	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para estar
       seguros de que un segmento de señal se corresponde con voz.
       
-        En nuestra práctica hemos coniderado un aumento de aproximadamente 3 dB.
+        	En nuestra práctica hemos coniderado un aumento de aproximadamente 3 dB.
 
 	* Duración mínima razonable de los segmentos de voz y silencio.
 	
-	Silencio: 0,42s 
-	Voz: 0,5 s
+		Silencio: 0,42s 
+		Voz: 0,5 s
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
 	
-	Una mayor tasa de cruces por cero en niveles de potencia cercanos a la potencia media del silencio, puede significar que tenemos una consonante como pueden ser la f, la b, la t o la k.
+		Una mayor tasa de cruces por cero en niveles de potencia cercanos a la potencia media del silencio, puede significar que 		tenemos una consonante como pueden ser la f, la b, la t o la k.
 
 ### Desarrollo del detector de actividad vocal
 
@@ -127,7 +127,7 @@ Ejercicios
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
 
-	<img src="
+	<img src="pic1.jpeg" witdth="500" align="center">
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
