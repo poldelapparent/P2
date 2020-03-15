@@ -100,24 +100,24 @@ Ejercicios
   potencia y la tasa de cruces por cero, junto con el etiquetado manual de los segmentos.
 
 	<img src="pic1.jpeg" witdth="500" align="center">
-
- Esta imagen corresponde a la primera grabacion que hicimos en el lab, posteriormente hicimos otra que era mejor i planteamos en el siguiente ejercicio,
+	
+	Esta imagen se corresponde a la primera grabacion que realizamos en el laboratorio. Posteriormente hicimos una segunda 			con menos ruido de fondo y mayor claridad en el audio. 
 
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
 
 	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para estar
       seguros de que un segmento de señal se corresponde con voz.
       
-        	En nuestra práctica hemos coniderado un aumento de aproximadamente 3 dB.
+	En nuestra práctica hemos coniderado un aumento de aproximadamente 3 dB.
 
 	* Duración mínima razonable de los segmentos de voz y silencio.
 	
-		Silencio: 0,42s 
-		Voz: 0,5 s
+	Silencio: 0,42s 
+	Voz: 0,5 s
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
 	
-		Una mayor tasa de cruces por cero en niveles de potencia cercanos a la potencia media del silencio, puede significar que 		tenemos una consonante como pueden ser la f, la b, la t o la k.
+	Una mayor tasa de cruces por cero en niveles de potencia cercanos a la potencia media del silencio, puede significar que 		tenemos una consonante como pueden ser la f, la b, la t o la k.
 
 ### Desarrollo del detector de actividad vocal
 
@@ -127,13 +127,11 @@ Ejercicios
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
   
-  	Esta gráfica demuestra el etiquetado manual, la detección automática i el senyal.
-
-	<img src="cap-61.jpeg" witdth="500" align="center">
+	No hemos podido obtener la el fichero .lab que mostrase la detección automática. Aún asi, hemos podido comparar los 			intervalos obtenidos al ejecutar nuestro programa con el fichero .lab que hicimos al marcar manualmente los tramos de 			voz y silencio. Las conclusiones las exponemos en el siguiente apartado.
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
-		El etiquetado manual lo hemos hecho aproximado segun lo que veiamos en la gráfica de potencia. Al ver la detección 			automática que hace el programa, podemos ver que aunque se aproxima bastante no coinciden exactamente los tiempos de 			inicio y final de cada una de las secciones (VOZ, SILENCIO).
+	El etiquetado manual lo hemos hecho aproximado segun lo que veiamos en la gráfica de potencia. Al ver la detección 			automática que hace el programa, podemos ver que aunque se aproxima bastante no coinciden exactamente los tiempos de 			inicio y final de cada una de las secciones (VOZ, SILENCIO).
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
@@ -164,8 +162,7 @@ Ejercicios
 - Si lo desea, puede realizar también algún comentario acerca de la realización de la práctica que considere
   de interés de cara a su evaluación.
   
-  Quan hem realitzat l'algoritme de la part obligatòria, tot i que ens surt un 90% de encert, hi han dos fitxers que ens surten un 70% 	   que ens fa baixar la mitja per algun problema en el nostre programa que no acabem de entendre.
-
+  Al realizar las pruebas con todos los audios proporcionados obtenemos cerca de un 90.5% de acierto. Aún asi, hemos observado que en algunos audios no obteniamos más de un 75% de acierto. Tras analizarlos nos hemos dado cuenta que la mayoria de ellos tenian una oscilacion de más de 10dB entre tramas proximas de silencio, es decir, que había un ruido de fondo muy alto. Hemos intentado optimizar nuestro programa para estos casos en particular pero disminuian el porcentaje de acierto en otros audios.
 
 ### Antes de entregar la práctica
 
