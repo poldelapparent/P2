@@ -101,6 +101,8 @@ Ejercicios
 
 <img src="im1.jpeg" width="640" align="center">
 
+  Aquesta imatge correspon a la primera grabació que vem realitzar al laboratori. Posteriorment vem realitzar una segona grabació (totes   dues les tenim al repositori), ja que hi havia menys soroll i ens ajudava millor a realitzar el nostre algoritme.
+
 - A la vista de la gráfica, indique qué valores considera adecuados para las magnitudes siguientes:
 
 	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para estar
@@ -128,11 +130,13 @@ Ejercicios
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
+  Existeix una discrepància obvia entre el etiquetat manual i el autòmatic, ja que el primer dels dos està realitzat a ull mentre que el   segon per un algoritme aixi que obviament hi han diferències.
+
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
   
-  <img src="cap.png" width="640" align="center">
+  <img src="cap.jpg" width="640" align="center">
 
 
 ### Trabajos de ampliación
@@ -156,6 +160,8 @@ Ejercicios
 
 - Si lo desea, puede realizar también algún comentario acerca de la realización de la práctica que considere
   de interés de cara a su evaluación.
+  
+  Quan hem realitzat l'algoritme de la part obligatòria, tot i que ens surt un 90% de encert, hi han dos fitxers que ens surten un 70% 	   que ens fa baixar la mitja per algun problema en el nostre programa que no acabem de entendre.
 
 
 ### Antes de entregar la práctica
