@@ -7,7 +7,7 @@
 DB=/home/albino/PAV/Prácticas/enunciados/obsoletos/P2/db.test
 CMD=bin/vad  #write here the name and path of your program
 
-for filewav in $DB/*/*wav; do
+for filewav in db.v4/*/*wav; do
 #    echo
     echo "**************** $filewav ****************"
     if [[ ! -f $filewav ]]; then 
@@ -25,6 +25,6 @@ for filewav in $DB/*/*wav; do
 
 done
 
-vad_evaluation.pl $DB/*/*lab
+scripts/vad_evaluation.pl db.v4/*/*lab
 
 exit 0
