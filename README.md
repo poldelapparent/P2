@@ -99,7 +99,7 @@ Ejercicios
   continuación, una captura de `wavesurfer` en la que se vea con claridad la señal temporal, el contorno de
   potencia y la tasa de cruces por cero, junto con el etiquetado manual de los segmentos.
 
-<img src="im1.jpeg" width="640" align="center">
+	<img src="pic1.jpeg" witdth="500" align="center">
 
   Aquesta imatge correspon a la primera grabació que vem realitzar al laboratori. Posteriorment vem realitzar una segona grabació (totes   dues les tenim al repositori), ja que hi havia menys soroll i ens ajudava millor a realitzar el nostre algoritme.
 
@@ -129,7 +129,7 @@ Ejercicios
   
   	Esta gráfica la insertamos con un audio en el qual vemos que hay mucho ruido, aun asi podemos diferenciar los tramos de voz y 		silencio.
 
-	<img src="pic1.jpeg" witdth="500" align="center">
+	<img src="cap-61.jpeg" witdth="500" align="center">
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
@@ -139,7 +139,7 @@ Ejercicios
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
   
-  	<img src="pic2.jpeg" width="500" align="center">
+  <img src="pic2.jpeg" width="500" align="center">
 
 
 ### Trabajos de ampliación
@@ -154,8 +154,7 @@ Ejercicios
 
 - Si ha usado `docopt_c` para realizar la gestión de las opciones y argumentos del programa `vad`, inserte
   una captura de pantalla en la que se vea el mensaje de ayuda del programa.
-  
-	<img src="pic3.jpeg" width="500" align="center">
+
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
 
@@ -165,7 +164,7 @@ Ejercicios
 - Si lo desea, puede realizar también algún comentario acerca de la realización de la práctica que considere
   de interés de cara a su evaluación.
   
- 	 Al realizar el alorismo de la parte obligatória nos sale un 90% de acierto, hemos observado que este podria ser mucho mayor si 	 nuestro programa reconociese el ruido de fondo. Hemos observado los audios en los que acertamos entre un 60% - 80% y la mayoria 	 se corresponden a audios con un ruido de fondo alto que hace oscilar la potencia en los estados de silencio mas de 10 dB.
+  Quan hem realitzat l'algoritme de la part obligatòria, tot i que ens surt un 90% de encert, hi han dos fitxers que ens surten un 70% 	   que ens fa baixar la mitja per algun problema en el nostre programa que no acabem de entendre.
 
 
 ### Antes de entregar la práctica
