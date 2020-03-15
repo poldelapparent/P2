@@ -108,16 +108,16 @@ Ejercicios
 	* Incremento del nivel potencia en dB, respecto al nivel correspondiente al silencio inicial, para estar
       seguros de que un segmento de señal se corresponde con voz.
       
-      El silencio se corresponde hasta los 40 dB y los señales de voz hasta los 55dB
+        En nuestra práctica hemos coniderado un aumento de aproximadamente 3 dB.
 
 	* Duración mínima razonable de los segmentos de voz y silencio.
 	
-	Silencio: 0,42s Voz: 0,5 s
+	Silencio: 0,42s 
+	Voz: 0,5 s
 
 	* ¿Es capaz de sacar alguna conclusión a partir de la evolución de la tasa de cruces por cero?
 	
-	Els sons consonants fricatius tenen mes talls per zero, i els oclusivs també però amb menor cuantitat.
-
+	Una mayor tasa de cruces por cero en niveles de potencia cercanos a la potencia media del silencio, puede significar que tenemos una consonante como pueden ser la f, la b, la t o la k.
 
 ### Desarrollo del detector de actividad vocal
 
@@ -127,15 +127,7 @@ Ejercicios
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
 
-  Per demostrar bé aquest punt, presentem tres captures que creiem que són importants, les dues primeres simbolitzen els valors de S i
-  V de els diferents documents, el fet per nosaltres i el fet per detecció automàtica. Finalment, la última imatge, veu reflectit les 
-  dos anteriors en un fragment del .wav en el wavesurfer.
-  
-  <img src="cap 58.jpg" width="640" align="center">
-  
-  <img src="cap 60.jpg" width="640" align="center">
-  
-  <img src="cap 61.jpg" width="640" align="center">
+	<img src="
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
