@@ -1,0 +1,6 @@
+# ninja log v5
+3	393	1584308091	vad_docopt.h	d58da7615ad5850b
+427	1120	1584308092	vad@exe/src_vad.c.o	c36367caf77eaccb
+394	1265	1584308092	vad@exe/src_main_vad.c.o	d098179ec8175ebe
+472	1268	1584308092	vad@exe/src_pav_analysis.c.o	9cb51f909cb44290
+1269	2004	1584308093	vad	33b61982f8309833
